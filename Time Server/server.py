@@ -1,7 +1,7 @@
 import socket
 S = socket.socket (socket.AF_INET, socket. SOCK_STREAM)
 # s.bind((socket.gethostbyname(), 1024))
-S.bind((socket.gethostname(), 1025))
+S.bind((socket.gethostbyname(socket.gethostname()), 1025))
 print(socket.gethostname())
 # 1024 is the port no. The port no can be >= 1024 because the rest are reserved
 S.listen (5)
